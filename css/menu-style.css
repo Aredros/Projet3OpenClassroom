@@ -1,0 +1,245 @@
+.dish {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/***************************SECTION IMG********************************/
+/***************************BIG IMAGE********************************/
+header {
+  padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 18vw;
+}
+
+header a i {
+  font-size: 30px;
+  color: black;
+  margin-top: 13px;
+}
+
+main {
+  background: #F6F6F6;
+}
+
+/************************Animation fade in********************************/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5vh);
+    -webkit-transform: translateY(-5vh);
+    -moz-transform: translateY(-5vh);
+    -ms-transform: translateY(-5vh);
+    -o-transform: translateY(-5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+/***************************SECTION Menu********************************/
+/***************************FULL MENU********************************/
+.section-main {
+  position: relative;
+}
+
+.section-main__img {
+  height: 250px;
+  background-size: cover;
+}
+
+/************************IDIVIDUAL RESTAURANT IMG*****************************/
+.rest-one-image {
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.rest-two-image {
+  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.rest-three-image {
+  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.rest-four-image {
+  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+/*****************************************************************************/
+.menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+/***************************LIST OF OPTIONS******************************/
+.menu-options {
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.menu-subtitles {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #353535;
+}
+
+.dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 10px;
+  background: white;
+  -webkit-box-shadow: 4px 4px 6px #dbdad5;
+          box-shadow: 4px 4px 6px #dbdad5;
+}
+
+.dish__title {
+  font-size: 16px;
+}
+
+.dish__non-animated-area {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-transition-property: -webkit-flex-basis;
+  transition-property: -webkit-flex-basis;
+  transition-property: flex-basis;
+  transition-property: flex-basis, -webkit-flex-basis, -ms-flex-preferred-size;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.dish__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2px;
+}
+
+.dish__details__comment {
+  font-size: 14.5px;
+}
+
+.dish__details__price {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.dish__animated-area {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+  text-align: center;
+  background: #9AE2D0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -webkit-transition-property: -webkit-flex-basis;
+  transition-property: -webkit-flex-basis;
+  transition-property: flex-basis;
+  transition-property: flex-basis, -webkit-flex-basis, -ms-flex-preferred-size;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  overflow: hidden;
+}
+
+.dish__animated-area i {
+  font-size: 20px;
+  margin-top: 50%;
+  color: white;
+}
+
+:hover > .dish__animated-area {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+}
+
+:hover > .dish__non-animated-area {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+}
+
+:hover > .dish__non-animated-area > .dish__details {
+  width: 180px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*******************************BUTTON************************************/
+.center-button {
+  text-align: center;
+}
+/*# sourceMappingURL=menu-style.css.map */

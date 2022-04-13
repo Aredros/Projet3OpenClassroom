@@ -1,0 +1,123 @@
+$cardbg: #F6F6F6;
+%border{ border-radius:8px ; -webkit-border-radius:8px ; -moz-border-radius:8px ; -ms-border-radius:8px ; -o-border-radius:8px ; }
+%shadow{ box-shadow: 4px 4px 6px #b9b9b9 }
+    
+/***************************SECTION ONE********************************/
+/***********************************************************************/
+.section-one{
+    text-align: center;
+    padding: 15px 0 0;
+    background: #EAEAEA;
+    p:first-child{
+        color: #353535;
+        width: 100%;
+        font-weight: 700;
+        padding: 0 0 15px ;
+    }    
+    div{
+        padding: 30px 15px;
+        background: $cardbg;
+        p{
+            color: rgb(46, 46, 46);
+            font-size: 17px;
+        }
+    }
+    h1{
+        font-size: 25px;
+        font-weight: 700;
+        padding: 0 15px 15px;
+    }
+}
+
+/***************************SECTION TWO********************************/
+/*************************FONCTIONNEMENT********************************/
+.section-two{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-card{
+        display: flex;
+        gap:20px;
+        padding: 25px 35px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        background: $cardbg;
+        margin: 20px 0;
+        position: relative;
+        @extend %shadow;
+        p{
+            font-size: 17px;
+            font-weight: 700;
+        }
+        i{
+            font-size: 18px;
+            color: #7E7E7E;
+        }
+        :hover > .fas{
+            color: #9356DC; 
+        }
+    }
+}
+
+.number-fonctionnement{
+    background: #9356DC;
+    padding: 6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 360px;
+    -webkit-border-radius: 360px;
+    -moz-border-radius: 360px;
+    -ms-border-radius: 360px;
+    -o-border-radius: 360px;
+    position: absolute;
+    left: -9px;
+    p{
+        color: white;
+        position: absolute;
+        top: 1px;
+        left: 7px;
+        font-weight: 500;
+    }
+}
+
+/***************************SECTION THREE********************************/
+/***************************RESTAURANTS********************************/
+.section-three{
+    background: $cardbg;
+    padding: 37px 0 0;
+    h2{
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+.restaurant-cards-area{
+    article a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .restaurant-img{
+        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .new-restaurant-tag{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #99DAC8;
+        color: #078B6B;
+        padding: 5px 6px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+}
+ 
+
+
+

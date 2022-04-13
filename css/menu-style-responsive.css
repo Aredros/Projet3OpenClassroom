@@ -1,0 +1,63 @@
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+@media (min-width: 768px) {
+  header {
+    gap: 40vw;
+  }
+  /***************************SECTION Menu********************************/
+  /***************************FULL MENU********************************/
+  .section-main__img {
+    height: 450px;
+  }
+  .menu-title {
+    width: 45%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  /***************************LIST OF OPTIONS******************************/
+  .menu-area {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu-area .menu-options {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .menu-area .menu-options .dish {
+    margin-bottom: 20px;
+  }
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+@media (min-width: 992px) {
+  /***************************LIST OF OPTIONS******************************/
+  .menu-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .menu-area .menu-options {
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    margin-left: auto;
+  }
+  .dish {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=menu-style-responsive.css.map */

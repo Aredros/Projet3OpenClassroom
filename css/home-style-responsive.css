@@ -1,0 +1,97 @@
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+@media (min-width: 768px) {
+  /**********************SECTION ONE**********************/
+  .section-one {
+    background: #F6F6F6;
+    text-align: left;
+    padding: 5px 35px 0;
+  }
+  .section-one p:first-child {
+    width: auto;
+    padding: 0 0 5px;
+    background: #F6F6F6;
+  }
+  .section-one div {
+    text-align: center;
+    background: #F6F6F6;
+    padding: 25vh 15px;
+  }
+  .section-one h1 {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 0 15px 35px;
+  }
+  /**********************SECTION TWO**********************/
+  .section-two {
+    width: 35%;
+  }
+  .section-two-card {
+    margin: 30px auto;
+  }
+  /**********************SECTION THREE**********************/
+  .section-three {
+    width: 90%;
+    margin: auto;
+  }
+  .section-three h2 {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .restaurant-cards-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .restaurant-cards-area .restaurant-img {
+    height: 300px;
+  }
+  .restaurant-cards-area article {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : BIG TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+@media (min-width: 450px) {
+  /**********************SECTION ONE**********************/
+  /**********************SECTION TWO**********************/
+  /**********************SECTION THREE**********************/
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+@media (min-width: 992px) {
+  /**********************SECTION ONE**********************/
+  /**********************SECTION TWO**********************/
+  /**********************SECTION THREE**********************/
+  .restaurant-cards-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .restaurant-cards-area .restaurant-img {
+    height: 360px;
+  }
+  .restaurant-cards-area article {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+/*# sourceMappingURL=home-style-responsive.css.map */
