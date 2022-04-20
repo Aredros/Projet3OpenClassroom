@@ -34,6 +34,12 @@
   .menu-area .menu-options .dish {
     margin-bottom: 20px;
   }
+  .menu-area .menu-options .dish__details__comment {
+    font-size: 13px;
+    white-space: nowrap;
+    width: 80%;
+    overflow: hidden;
+  }
 }
 
 /*********************************************************************************/
@@ -52,12 +58,12 @@
             align-items: stretch;
   }
   .menu-area .menu-options {
-    -ms-flex-preferred-size: 28%;
-        flex-basis: 28%;
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
     margin-left: auto;
   }
   .dish {
-    width: 70%;
+    width: 85%;
   }
 }
 /*# sourceMappingURL=menu-style-responsive.css.map */

@@ -32,6 +32,14 @@ header{
         flex-basis: 48%;
         .dish{
             margin-bottom: 20px;
+            &__details{
+                &__comment{
+                    font-size: 13px;
+                    white-space: nowrap;
+                    width: 80%;
+                    overflow: hidden;
+                }
+            }   
         }
     }
  }
@@ -52,12 +60,12 @@ header{
     flex-wrap: wrap;
     align-items: stretch;
     .menu-options{
-        flex-basis: 28%;
+        flex-basis: 31%;
         margin-left: auto;
     }
  }
 
- .dish{width: 70%;}
+ .dish{width: 85%;}
 
 
 }
