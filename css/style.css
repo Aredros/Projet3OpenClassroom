@@ -71,8 +71,61 @@ main {
   padding-right: 5px;
 }
 
-/***************************SECTION TWO********************************/
+.section-three .fas, .menu-title .fas {
+  background: -webkit-linear-gradient(left top, #ba61d7 0%, #cb66d8 50%, #dc6cd9 50%, #ec73da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
+}
+
+.section-three .fas:hover, .menu-title .fas:hover {
+  background-position: 0 0;
+}
+
+/***************************fadeIN********************************/
 /*************************FONCTIONNEMENT********************************/
+/************************Animation fade in********************************/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5vh);
+    -webkit-transform: translateY(-5vh);
+    -moz-transform: translateY(-5vh);
+    -ms-transform: translateY(-5vh);
+    -o-transform: translateY(-5vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: relative;
+}
+
 /***************************CARD MODELS********************************/
 /***************************RESTAURANTS********************************/
 .restaurant-cards-area {
@@ -125,5 +178,10 @@ footer p {
 
 footer p footer p i {
   width: 25px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

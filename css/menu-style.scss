@@ -20,29 +20,6 @@ main{
     background: $cardbg;
 }
 
-
-/************************Animation fade in********************************/
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
- 
- @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-5vh); -webkit-transform: translateY(-5vh); -moz-transform: translateY(-5vh); -ms-transform: translateY(-5vh); -o-transform: translateY(-5vh); }
-    100% { opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); }
- }
- 
- .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-duration:5s;
-    animation-duration: 5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position: relative;
- }
-
-
 /***************************SECTION Menu********************************/
 /***************************FULL MENU********************************/
 .section-main{
@@ -112,14 +89,6 @@ main{
         transition-property: width;
         transition-duration: 1000ms;
     }
-    &__non-animated-area{
-        padding: 10px 10px;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-        transition-property: flex-basis;
-        transition-duration: 1000ms;
-    }
     &__details{
         display: flex;
         flex-direction: row;
@@ -133,26 +102,6 @@ main{
             margin-right: 4px;
         }
     }
-    &__animated-area{
-        flex-basis: 0%;
-        text-align: center;
-        background: $animatedDiv;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        transition-property: flex-basis;
-        transition-duration: 1000ms;
-        overflow: hidden;
-        i{
-            font-size: 20px;
-            margin-top: 50%;
-            color: white
-        }
-    }
-    :hover > &__animated-area{
-        flex-basis: 15%;
-    }
-    :hover > &__non-animated-area{
-        flex-basis: 85%; }
     :hover >  &__title{
             width: 80%;
             text-overflow: ellipsis;
@@ -168,7 +117,50 @@ main{
 }
 
 
+.food__content {
+    overflow: hidden;
+    &:hover > .right {
+        margin-right: 0;
+        > .check {
+            transform: rotate(0turn);
+            -webkit-transform: rotate(0turn);
+            -moz-transform: rotate(0turn);
+            -ms-transform: rotate(0turn);
+            -o-transform: rotate(0turn);
+}
+    }
+    .left {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .right {
+        margin-right: -50px;
+        padding: 0;
+        width: 50px;
+        min-width: 50px;
+        height: 62px;
+        background-color: $animatedDiv;
+        transition: all 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .check {
+            font-size: 1.5rem;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms;
+        }
+    }
+}
+
+
 /*******************************BUTTON************************************/
 .center-button{
     text-align: center;
 }
+

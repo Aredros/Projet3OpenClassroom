@@ -57,11 +57,16 @@ $cardbg: #F6F6F6;
             font-size: 18px;
             color: #7E7E7E;
         }
-        :hover > .fas{
-            color: #9356DC; 
-        }
+    }
+    &-card:hover{
+        color: #9356DC; 
     }
 }
+
+.section-two-card:hover > .fas{
+    color: #9356DC; 
+}
+
 
 .number-fonctionnement{
     background: #9356DC;
@@ -117,7 +122,13 @@ $cardbg: #F6F6F6;
         font-weight: 700;
     }
 }
- 
+.section-three{
+    .far{
+        color: #353535;
+    }
+}
+
+
 
 
 

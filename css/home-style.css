@@ -69,7 +69,11 @@
   color: #7E7E7E;
 }
 
-.section-two-card :hover > .fas {
+.section-two-card:hover {
+  color: #9356DC;
+}
+
+.section-two-card:hover > .fas {
   color: #9356DC;
 }
 
@@ -130,5 +134,9 @@
   padding: 5px 6px;
   font-size: 10px;
   font-weight: 700;
+}
+
+.section-three .far {
+  color: #353535;
 }
 /*# sourceMappingURL=home-style.css.map */
