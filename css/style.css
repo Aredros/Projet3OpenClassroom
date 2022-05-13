@@ -27,6 +27,41 @@
   font-family: 'Shrikhand-Regular', 'Raleway', 'sans-serif', impact;
 }
 
+/***********************LOADING ANIMATION************************************/
+.loading-area {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  background: white;
+  z-index: 999;
+}
+
+.loading-area__spinner {
+  margin-left: 50%;
+  margin-top: 20%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #a75cd5;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 /***************************SECTION************************************/
 /****************************HEADER************************************/
 header {
@@ -124,6 +159,54 @@ main {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   position: relative;
+}
+
+/***************************fadeOUT********************************/
+@-webkit-keyframes fadeOUT {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  80% {
+    opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 0;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
+@keyframes fadeOUT {
+  0% {
+    opacity: 1;
+    height: 100vh;
+  }
+  80% {
+    opacity: 1;
+    height: 100vh;
+  }
+  99% {
+    opacity: 0;
+    height: 100vh;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
+.fadeOUT {
+  -webkit-animation-name: fadeOUT;
+  animation-name: fadeOUT;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /***************************CARD MODELS********************************/

@@ -5,13 +5,18 @@
   /**********************SECTION ONE**********************/
   .section-one {
     background: #F6F6F6;
-    text-align: left;
+    text-align: center;
     padding: 5px 35px 0;
   }
   .section-one p:first-child {
-    width: auto;
+    width: 300px;
+    margin: auto;
     padding: 0 0 5px;
-    background: #F6F6F6;
+    background: #ffffff;
+    position: relative;
+    top: -10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
   .section-one div {
     text-align: center;

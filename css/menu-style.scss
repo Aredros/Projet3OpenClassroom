@@ -102,17 +102,23 @@ main{
             margin-right: 4px;
         }
     }
-    :hover >  &__title{
-            width: 80%;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+    :hover >  &__details{
+            &__price{
+                display: none;
             }
-    :hover >  &__details__comment{
-            width: 80%;
-            text-overflow: ellipsis;
+            }
+    :hover >  &__details{
+            width: 78%;
             overflow: hidden;
-            white-space: nowrap;
+            &__comment{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            &__price{
+                display: none;
+                white-space: nowrap;
+            }
         }
 }
 

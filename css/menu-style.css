@@ -147,17 +147,23 @@ main {
   margin-right: 4px;
 }
 
-:hover > .dish__title {
-  width: 80%;
+:hover > .dish__details__price {
+  display: none;
+}
+
+:hover > .dish__details {
+  width: 78%;
+  overflow: hidden;
+}
+
+:hover > .dish__details__comment {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-:hover > .dish__details__comment {
-  width: 80%;
-  text-overflow: ellipsis;
-  overflow: hidden;
+:hover > .dish__details__price {
+  display: none;
   white-space: nowrap;
 }
 
