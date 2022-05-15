@@ -94,29 +94,20 @@ main{
         flex-direction: row;
         justify-content: space-between;
         margin-top: 2px;
+        white-space: nowrap;
         &__comment{
             font-size: 14px;
         }
         &__price{
             font-weight: 700;
             margin-right: 4px;
+            margin-left: 4px;
         }
     }
     :hover >  &__details{
-            &__price{
-                display: none;
-            }
-            }
-    :hover >  &__details{
-            width: 78%;
-            overflow: hidden;
             &__comment{
                 text-overflow: ellipsis;
                 overflow: hidden;
-                white-space: nowrap;
-            }
-            &__price{
-                display: none;
                 white-space: nowrap;
             }
         }

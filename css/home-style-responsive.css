@@ -21,7 +21,7 @@
   .section-one div {
     text-align: center;
     background: #F6F6F6;
-    padding: 25vh 15px;
+    padding: 7vh 15px;
   }
   .section-one h1 {
     font-size: 35px;
@@ -30,7 +30,7 @@
   }
   /**********************SECTION TWO**********************/
   .section-two {
-    width: 35%;
+    width: 45%;
   }
   .section-two-card {
     margin: 30px auto;
@@ -78,7 +78,16 @@
 /*********************************************************************************/
 @media (min-width: 992px) {
   /**********************SECTION ONE**********************/
+  .section-one div {
+    padding: 10vh 15px;
+  }
   /**********************SECTION TWO**********************/
+  .section-two {
+    width: 35%;
+  }
+  .section-two-card {
+    margin: 30px auto;
+  }
   /**********************SECTION THREE**********************/
   .restaurant-cards-area {
     display: -webkit-box;

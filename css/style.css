@@ -203,8 +203,8 @@ main {
 .fadeOUT {
   -webkit-animation-name: fadeOUT;
   animation-name: fadeOUT;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -263,7 +263,7 @@ footer p footer p i {
   width: 25px;
 }
 
-footer p a {
+footer a {
   text-decoration: none;
   color: white;
 }

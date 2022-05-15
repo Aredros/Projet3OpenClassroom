@@ -136,6 +136,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2px;
+  white-space: nowrap;
 }
 
 .dish__details__comment {
@@ -145,25 +146,12 @@ main {
 .dish__details__price {
   font-weight: 700;
   margin-right: 4px;
-}
-
-:hover > .dish__details__price {
-  display: none;
-}
-
-:hover > .dish__details {
-  width: 78%;
-  overflow: hidden;
+  margin-left: 4px;
 }
 
 :hover > .dish__details__comment {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-}
-
-:hover > .dish__details__price {
-  display: none;
   white-space: nowrap;
 }
 
