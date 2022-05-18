@@ -65,16 +65,27 @@ main{
 }
 
 .menu-subtitles{
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    font-size: 17px;
     font-weight: 400;
-    color: #353535
+    color: #353535;
+    position: relative;
+}
+
+.menu-subtitles:before{
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 2px;
+    bottom: -5px;
+    border-bottom: 3px solid #99DAC8;
 }
 
 .dish{
+    cursor: pointer;
     display: flex;
     position: relative;
-    flex-direction: row;
     justify-content: space-between;
     width: 94%;
     margin: auto;
@@ -82,33 +93,48 @@ main{
     background: white;
     @include card-shadow(#dbdad5);
     @extend %border;
-    &__title{
-        font-size: 16px;
-        width: 190px;
-        white-space: nowrap;
-        transition-property: width;
-        transition-duration: 1000ms;
-    }
     &__details{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         margin-top: 2px;
-        white-space: nowrap;
+        transition: margin-right 1s;
+        width:100%;
+        overflow: hidden;
+        &__title{
+            font-size: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            transition-property: width;
+            transition-duration: 1000ms;
+        }
         &__comment{
             font-size: 14px;
-        }
-        &__price{
-            font-weight: 700;
-            margin-right: 4px;
-            margin-left: 4px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
-    :hover >  &__details{
+    &__details2{
+        &__price{
+            font-weight: 700;
+            margin: 15px;
+            transition: width 1s;
+            width:calc(100% - 30px);
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        :hover + .dish__details{
             &__comment{
                 text-overflow: ellipsis;
                 overflow: hidden;
-                white-space: nowrap;
+                white-space: nowrap;   
+                max-width: 95%;
+            }
+        }
+    }
+    :hover >  &__details2{
+            &__price{
+                width: calc(100% - 112px);
             }
         }
 }
@@ -129,10 +155,10 @@ main{
     .left {
         width: 100%;
         height: 100%;
-        padding: 10px;
+        padding: 6px 10px;
         overflow: hidden;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
     .right {
@@ -140,7 +166,6 @@ main{
         padding: 0;
         width: 50px;
         min-width: 50px;
-        height: 62px;
         background-color: $animatedDiv;
         transition: all 500ms;
         display: flex;

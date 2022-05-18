@@ -37,7 +37,6 @@
   .menu-area .menu-options .dish__details__comment {
     font-size: 13px;
     white-space: nowrap;
-    width: 80%;
     overflow: hidden;
   }
 }

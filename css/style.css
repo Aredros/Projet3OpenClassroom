@@ -84,7 +84,7 @@ main {
 .multicolor-button {
   background-image: -webkit-gradient(linear, right bottom, left top, from(#a75cd5), color-stop(#ba61d7), color-stop(#cb66d8), color-stop(#dc6cd9), to(#ec73da));
   background-image: linear-gradient(to left top, #a75cd5, #ba61d7, #cb66d8, #dc6cd9, #ec73da);
-  padding: 16px 20px;
+  padding: 16px 40px;
   font-weight: 700;
   color: white;
   margin: 25px 20px 20px;
@@ -96,6 +96,10 @@ main {
   -o-border-radius: 30px;
   -webkit-box-shadow: 4px 4px 6px #dbdad5;
           box-shadow: 4px 4px 6px #dbdad5;
+}
+
+.multicolor-button:hover {
+  opacity: 0.8;
 }
 
 /***************************RANDOM ICONS********************************/
